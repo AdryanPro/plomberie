@@ -118,18 +118,18 @@ function App() {
       </section>
     </div>
 
-    <section className='WrappeCommentProceder'>
-      <div className="section-content">
+    <section className="proceder-section">
+      <div className="proceder-content">
         <h2 className="title">Comment Procéder ?</h2>
         
-        <div className='wrappeCardsCommentAgir'>
+        <div className="steps-grid">
           {steps.map((step, index) => (
             <div 
               key={index}
               className="step-card"
             >
               <div className="step-icon-container">
-                <step.Icon size={32} />
+                <step.Icon className="step-icon" />
               </div>
               <h3 className="step-title">
                 {step.title}
@@ -140,13 +140,14 @@ function App() {
             </div>
           ))}
         </div>
+        
+        <div className="styleBtn">
+          <button className='btnContactezNousHeader sizeMobile'>
+            <a href="tel:+33769084998" class="a">Appelez-nous</a>
+          </button>
+        </div>
       </div>
     </section>
-    <div className="styleBtn">
-      <button className='btnContactezNousHeader'>
-        <a href="tel:+33769084998" class="a">Appelez-nous</a>
-      </button>
-    </div>
 
     <section className="PourquoiNousChoisir-container">
       <div className="PourquoiNousChoisir-header">
